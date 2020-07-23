@@ -1,0 +1,662 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Apigee-Edge-Dev-Training",
+		"_postman_id": "b6586f66-fabb-84a6-01d4-4d0078bae3c1",
+		"description": "This collection contains all the calls as part of the labs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /products",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Detailed list of all Products"
+			},
+			"response": []
+		},
+		{
+			"name": "GET / with API Key Target Server Error",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/?apikey=VALID_API_KEY",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "VALID_API_KEY",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Target Server Error"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /products with APIKey",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/products?apikey=VALID_API_KEY",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "VALID_API_KEY",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Detailed list of all Products with API Key"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /products/{id} with APIKey",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}?apikey=VALID_API_KEY",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"products",
+						"{{product_id}}"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "VALID_API_KEY",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Fetch Product using Product with API Key"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /products/{id}",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Detailed list of Product given the productId"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /products/doesntexist",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products/doesntexist",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get a product that doesnt exist. Used for logging lab"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /products/{id}/availability",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}/availability",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get Product Availability by Product Id"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /products",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/products?apikey=VALID_API_KEY",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "VALID_API_KEY",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"36421452\",\n  \"category\": [\n    \"Cameras\"\n  ],\n  \"images\": [\n    \"https://cdn.pixabay.com/photo/2017/04/22/10/44/CAmeRA-2251051_1280.jpg\"\n  ],\n  \"overall_rating\": 6.41,\n  \"product_name\": \"Funfilm X-T3\",\n  \"short_description\": \"16.4MP Sensor, Weather Resistant - dust-resistant, water-resistant and -10 Degree C low-temperature operation\"\n}"
+				},
+				"description": "Create New Product"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /products with APIKey (Regex)",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/products?apikey=VALID_API_KEY",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "VALID_API_KEY",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"36421452\",\n  \"category\": [\n    \"Cameras\"\n  ],\n  \"images\": [\n    \"https://cdn.pixabay.com/photo/2017/04/22/10/44/CAmeRA-2251051_1280.jpg\"\n  ],\n  \"overall_rating\": 6.41,\n  \"product_name\": \"<sql>delete from products</sql>\",\n  \"short_description\": \"16.4MP Sensor, Weather Resistant - dust-resistant, water-resistant and -10 Degree C low-temperature operation\"\n}"
+				},
+				"description": "Create New Product with a body that has security issues"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /products with APIKey (JSONThreat)",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/products?apikey=VALID_API_KEY",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "VALID_API_KEY",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"36421452\",\n  \"category\": [\n    \"Cameras\"\n  ],\n  \"images\": [\n    \"https://cdn.pixabay.com/photo/2017/04/22/10/44/CAmeRA-2251051_1280.jpg\"\n  ],\n  \"overall_rating\": 6.41,\n  \"product_name\": \"Funfilm X-T3\",\n  \"short_description\": \"16.4MP Sensor, Weather Resistant - dust-resistant, water-resistant and -10 Degree C low-temperature operation\",\n  \"test\": \"test\"\n}"
+				},
+				"description": "Create New Product with a body"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /products/{id}",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"overall_rating\": 6.41\n}"
+				},
+				"description": "Update Product by Product Id"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /products/{id} (Logging)",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"overall_rating\": 6.41\n}"
+				},
+				"description": "Update Product by Product Id"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /products/{id} (Basic Auth)",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"overall_rating\": 8.41\n}"
+				},
+				"description": "Update Product by Product Id using Basic Auth policy"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /products/{id} (Encrypted KVM)",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"overall_rating\": 10.41\n}"
+				},
+				"description": "Update Product by Product Id using Basic Auth policy"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /products/{id} with API Key",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/products/{{product_id}}?apikey=VALID_API_KEY",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"products",
+						"{{product_id}}"
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "VALID_API_KEY",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"overall_rating\": 10.41\n}"
+				},
+				"description": "Update Product by Product Id "
+			},
+			"response": []
+		},
+		{
+			"name": "GET /stores/{id}",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/locations/stores/{{storeId}}",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get Store information for a given Store ID"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /stores/{id} Accept:application/xml",
+			"request": {
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/locations/stores/{{storeId}}?element=entities",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"locations",
+						"stores",
+						"{{storeId}}"
+					],
+					"query": [
+						{
+							"key": "element",
+							"value": "entities",
+							"equals": true
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Get Store information for a given Store ID"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /message-validation",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/message-validation",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<store>\n    <entities>\n        <uuid>971d4e43-f0b0-11e7-862e-12c1e35638f0</uuid>\n        <type>store</type>\n        <name>Shop 3</name>\n        <affiliate>HJK</affiliate>\n        <id>1</id>\n        <location>\n            <latitude>38.587595</latitude>\n            <longitude>-121.550184</longitude>\n        </location>\n        <phone>916-373-2200</phone>\n        <site_type>store</site_type>\n        <address>755 Riverpoint Ct, West Sacramento, CA 95605, USA</address>\n    </entities>\n    <timestamp>1515691152268</timestamp>\n    <duration>40</duration>\n</store>"
+				},
+				"description": "for optional Message Validation lab"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /accesstoken",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/oauth/accesstoken",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Get an OAuth 2.0 access token"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /accesstoken (password grant)",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/oauth/accesstoken",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "apininja",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "iloveapis",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Get an OAuth 2.0 access token"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /products with Bearer Token",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/v1/products",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer token",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "Detailed list of all Products with Bearer Token"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /refreshtoken",
+			"request": {
+				"url": "https://{{org}}-{{env}}.apigee.net/oauth/refresh_accesstoken",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Y2xpZW50X2lkOmNsaWVudF9zZWNyZXQ=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "refresh_token",
+							"value": "refreshtoken",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
