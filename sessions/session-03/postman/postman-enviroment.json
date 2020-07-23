@@ -1,0 +1,34 @@
+{
+    "id": "2c825883-f497-2170-8196-4170e704720b",
+    "name": "Apigee-Edge-Dev-Training",
+    "values": [
+      {
+        "enabled": true,
+        "key": "org",
+        "value": "yourOrg",
+        "type": "text"
+      },
+      {
+        "enabled": true,
+        "key": "env",
+        "value": "yourEnv",
+        "type": "text"
+      },
+      {
+        "enabled": true,
+        "key": "product_id",
+        "value": "697690",
+        "type": "text"
+      },
+      {
+        "enabled": true,
+        "key": "storeId",
+        "value": "benbrook",
+        "type": "text"
+      }
+    ],
+    "timestamp": 1515659812562,
+    "_postman_variable_scope": "environment",
+    "_postman_exported_at": "2018-01-11T08:38:25.980Z",
+    "_postman_exported_using": "Postman/5.4.0"
+  }
