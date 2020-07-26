@@ -21,23 +21,29 @@ Curso de capacitación de Apigee API Management.
     3. Best Practices.
     4. Open API.
     5. Practice Lab.
-3. Apigee Development. 
+3. Apigee Development (part-1). 
     1. API Proxy.
     2. API Policies.
     3. Target Servers. 
     4. API Products. 
     5. Debugging APIs. 
     6. Practice Lab.
-4. Security.
+4. Apigee Development (part-2). 
+    1. API Proxy.
+    2. API Policies.
+    3. Target Servers. 
+    4. API Products. 
+    5. Debugging APIs. 
+    6. Practice Lab.
+5. Security.
     1. API Keys. 
     2. OAuth 2.0. 
     3. TLS.
     4. Practice Lab.
-5. Monitoring.
+6. Monitoring.
     1. API Metrics. 
     2. Analytics. 
     3. Alerts.
-6. Additional Practice Lab (optional).
 
 ## Referencias
 
