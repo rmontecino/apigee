@@ -1,6 +1,14 @@
 # Apigee API Management
 Curso de capacitación de Apigee API Management.
 
+- [Apigee API Management](#apigee-api-management)
+  - [Roadmap del curso](#roadmap-del-curso)
+  - [Referencias](#referencias)
+- [Setup para laboratorios](#setup-para-laboratorios)
+  - [Introducción](#introducción)
+  - [Pre-requisitos](#pre-requisitos)
+  - [Acceso a Firebase e importación de data](#acceso-a-firebase-e-importación-de-data)
+
 ## Roadmap del curso
 
 1. API Management.
