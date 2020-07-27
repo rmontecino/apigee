@@ -56,6 +56,15 @@ Curso de capacitación de Apigee API Management.
 7. http://docs.apigee.com/api-services/content/best-practices-api-proxy-design-and-development
 8. http://docs.apigee.com/api-services/content/using-trace-tool-0
 9. https://community.apigee.com/topics/trace.html
+10. http://docs.apigee.com/api-services/reference/spike-arrest-policy
+11. http://docs.apigee.com/api-services/content/rate-limiting
+12. http://docs.apigee.com/api-services/reference/quota-policy
+13. https://community.apigee.com/questions/1488/how-do-the-quota-settings-on-an-api-product-intera.html
+14. http://docs.apigee.com/api-services/content/comparing-quota-spike-arrest-and-concurrent-rate-limit-policies
+15. https://docs.apigee.com/api-services/reference/assign-message-policy
+16. https://docs.apigee.com/api-services/reference/basic-authentication-policy
+17. https://docs.apigee.com/api-services/reference/key-value-map-operations-policy
+18. https://docs.apigee.com/api-services/content/load-balancing-across-backend-servers
 
 # Setup para laboratorios
 
