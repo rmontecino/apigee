@@ -1,0 +1,10 @@
+<HTTPTargetConnection>
+    <Properties/>
+    <SSLInfo>
+        <Enabled>true</Enabled>
+    </SSLInfo>
+    <LoadBalancer>
+        <Server name="TS-Product"/>
+    </LoadBalancer>
+    <Path>/db</Path>
+</HTTPTargetConnection>

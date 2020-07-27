@@ -1,6 +1,14 @@
 # Apigee API Management
 Curso de capacitación de Apigee API Management.
 
+- [Apigee API Management](#apigee-api-management)
+  - [Roadmap del curso](#roadmap-del-curso)
+  - [Referencias](#referencias)
+- [Setup para laboratorios](#setup-para-laboratorios)
+  - [Introducción](#introducción)
+  - [Pre-requisitos](#pre-requisitos)
+  - [Acceso a Firebase e importación de data](#acceso-a-firebase-e-importación-de-data)
+
 ## Roadmap del curso
 
 1. API Management.
@@ -13,23 +21,29 @@ Curso de capacitación de Apigee API Management.
     3. Best Practices.
     4. Open API.
     5. Practice Lab.
-3. Apigee Development. 
+3. Apigee Development (part-1). 
     1. API Proxy.
     2. API Policies.
     3. Target Servers. 
     4. API Products. 
     5. Debugging APIs. 
     6. Practice Lab.
-4. Security.
+4. Apigee Development (part-2). 
+    1. API Proxy.
+    2. API Policies.
+    3. Target Servers. 
+    4. API Products. 
+    5. Debugging APIs. 
+    6. Practice Lab.
+5. Security.
     1. API Keys. 
     2. OAuth 2.0. 
     3. TLS.
     4. Practice Lab.
-5. Monitoring.
+6. Monitoring.
     1. API Metrics. 
     2. Analytics. 
     3. Alerts.
-6. Additional Practice Lab (optional).
 
 ## Referencias
 
@@ -42,6 +56,15 @@ Curso de capacitación de Apigee API Management.
 7. http://docs.apigee.com/api-services/content/best-practices-api-proxy-design-and-development
 8. http://docs.apigee.com/api-services/content/using-trace-tool-0
 9. https://community.apigee.com/topics/trace.html
+10. http://docs.apigee.com/api-services/reference/spike-arrest-policy
+11. http://docs.apigee.com/api-services/content/rate-limiting
+12. http://docs.apigee.com/api-services/reference/quota-policy
+13. https://community.apigee.com/questions/1488/how-do-the-quota-settings-on-an-api-product-intera.html
+14. http://docs.apigee.com/api-services/content/comparing-quota-spike-arrest-and-concurrent-rate-limit-policies
+15. https://docs.apigee.com/api-services/reference/assign-message-policy
+16. https://docs.apigee.com/api-services/reference/basic-authentication-policy
+17. https://docs.apigee.com/api-services/reference/key-value-map-operations-policy
+18. https://docs.apigee.com/api-services/content/load-balancing-across-backend-servers
 
 # Setup para laboratorios
 
