@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RegularExpressionProtection async="false" continueOnError="false" enabled="true" name="RegexProtection">
+    <DisplayName>RegexProtection</DisplayName>
+    <Source>request</Source>
+    <JSONPayload escapeSlashCharacter="true">
+        <JSONPath>
+            <Expression>$.</Expression>
+            <Pattern>.*Exception in thread.*</Pattern>
+            <Pattern>[\s]*((delete)|(exec)|(drop\s*table)|(insert)|(shutdown)|(update)|(\bor\b))</Pattern>
+        </JSONPath>
+    </JSONPayload>
+</RegularExpressionProtection>
