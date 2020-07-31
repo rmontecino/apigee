@@ -1,0 +1,4 @@
+<Step>
+    <Name>SC-AuthenticateUser</Name>
+    <Condition>request.formparam.grant_type = "password"</Condition>
+</Step>

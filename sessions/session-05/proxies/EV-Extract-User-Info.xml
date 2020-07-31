@@ -1,0 +1,4 @@
+<Step>
+    <Name>EV-Extract-User-Info</Name>
+    <Condition>request.formparam.grant_type = "password"</Condition>
+</Step>

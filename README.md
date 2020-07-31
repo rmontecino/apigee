@@ -65,6 +65,11 @@ Curso de capacitación de Apigee API Management.
 16. https://docs.apigee.com/api-services/reference/basic-authentication-policy
 17. https://docs.apigee.com/api-services/reference/key-value-map-operations-policy
 18. https://docs.apigee.com/api-services/content/load-balancing-across-backend-servers
+19. https://docs.apigee.com/api-platform/antipatterns/intro
+20. https://docs.apigee.com/api-platform/reference/policies/jwt-policies-overview
+21. https://docs.apigee.com/api-services/reference/regular-expression-protection
+22. https://docs.apigee.com/api-services/reference/json-threat-protection-policy
+23. https://docs.apigee.com/api-services/content/oauth-home
 
 # Setup para laboratorios
 
