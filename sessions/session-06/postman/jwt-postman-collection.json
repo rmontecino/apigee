@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "626394e4-3bfc-43d8-bd98-1278a88de30d",
+		"name": "Apigee-Edge-Dev-JWT",
+		"description": "This collection contains all the calls as part of the labs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /login (generate JWT)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "mysusername",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "mypassword",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://rmontecinoapigee-eval-test.apigee.net/login",
+					"protocol": "https",
+					"host": [
+						"rmontecinoapigee-eval-test",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET /account (validate JWT)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "jwt-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWJqZWN0LXN1YmplY3QiLCJhdWQiOlsiYXVkaWVuY2UxIiwiYXVkaWVuY2UyIl0sImlzcyI6InVybjpcL1wvYXBpZ2VlLWVkZ2UtSldULXBvbGljeS10ZXN0IiwiZXhwIjoxNTk3MDYyNTEyLCJ1c2VySWQiOiJteXN1c2VybmFtZSIsImlhdCI6MTU5NzAzMzcxMiwianRpIjoiNTQ1N2YzMDAtNzc1ZS00N2FmLThiODAtOTM4N2Y5OWE3ZTIyIn0.axuv982mHKDlfdq7p30AvyAIYlWug0WKmGCKKXgDhSo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://{{org}}-{{env}}.apigee.net/v1/account",
+					"protocol": "https",
+					"host": [
+						"{{org}}-{{env}}",
+						"apigee",
+						"net"
+					],
+					"path": [
+						"v1",
+						"account"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "063d271d-3e44-4ea5-bd3c-f103aa10c09c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7f464d41-d6e8-4a6b-be75-83ca2306d701",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
