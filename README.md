@@ -70,6 +70,8 @@ Curso de capacitación de Apigee API Management.
 21. https://docs.apigee.com/api-services/reference/regular-expression-protection
 22. https://docs.apigee.com/api-services/reference/json-threat-protection-policy
 23. https://docs.apigee.com/api-services/content/oauth-home
+24. https://github.com/DinoChiesa/Edge-RFC7523-Proxy
+25. https://community.apigee.com/articles/39911/do-you-use-curl-stop-using-u-please-use-curl-n-and.html
 
 # Setup para laboratorios
 
